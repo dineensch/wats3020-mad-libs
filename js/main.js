@@ -1,81 +1,85 @@
 // WATS 3020 Mad Libs Assignment
-//
-// For this assignment you must fill in the code below so that it functions
-// to populate the text of the "Mad Libs" style story in the HTML.
-//
-// In order to achieve this goal, you will need to write prompt() statements
-// to collect input from the user. The input you collect will be used to
-// generate the story.
-//
-//
-// TODO: Write a prompt statement like the one below for each of the
-// variables listed.
 
-let honorific = prompt('Please enter an honorific title (e.g. Mister or Colonel).');
 
-// Using the same prompt() command, populate the following variables:
-//
-// TODO: A variable named "authorName" for authorial attribution.
-let authorName = prompt('What is your full name?');
 
-// TODO: A variable named "adjective1" for a word used to describe something.
 
-// TODO: A variable named "vehicle" for a mode of transation (e.g. plane, boat, etc.).
+let honorific = prompt('Please enter an title (e.g. Empress or Colonel).');
 
-// TODO: A variable named "vehiclePart" for a part of the vehicle you just named.
+//A variable named "authorName" for authorial attribution.
+let authorName = prompt('What is your name?');
 
-// TODO: A variable named "parking" for a location where you park the vehicle you just named.
+// A variable named "adjective1" for a word used to describe something.
+let adjective1 = prompt ('Give an adjective to describe something.');
 
-// TODO: A variable named "precious" for a precious object.
+// A variable named "vehicle" for a mode of transportation (e.g. plane, boat, etc.).
+let vehicle = prompt('What is your preferred mode of transportation?');
 
-// TODO: A variable named "noiseMaker" for something that makes a sound.
+// A variable named "vehiclePart" for a part of the vehicle you just named.
+let vehiclePart = prompt('Name a part of the transportation you just named.');
 
-// TODO: A variable named "crowdBehavior" for something that people do together as a group.
+// A variable named "parking" for a location where you park the vehicle you just named.
+let parking = prompt('Name a location.');
 
-// TODO: A variable named "adjective2" for a word used to describe something.
+// A variable named "precious" for a precious object.
+let precious = prompt('What is your most prized possession?');
 
-// TODO: A variable named "adjective3" for a word used to describe something.
+// A variable named "noiseMaker" for something that makes a sound.
+let noiseMaker = prompt('Name something that makes a lot of noise.');
 
-// TODO: A variable named "color" for the name of a color.
+// A variable named "crowdBehavior" for something that people do together as a group.
+let crowdBehavior = prompt('Name an activity you can do together with a group.');
 
-// TODO: A variable named "familyMember" for the name of a family relationship (e.g. sister, father, etc.).
+// A variable named "adjective2" for a word used to describe something.
+let adjective2 = prompt('Name a word to describe something.');
 
-// TODO: A variable named "organ" for the name of a body organ (e.g. heart, liver, spleen, etc.).
+// A variable named "adjective3" for a word used to describe something.
+let adjective3 = prompt('Name another word to describe something.');
 
-// TODO: A variable named "bodyPart1" for the name of a body part.
+// A variable named "color" for the name of a color.
+let color = prompt('What is your least favorite color?');
 
-// TODO: A variable named "bodyPart2" for the name of a body part.
+// A variable named "familyMember" for the name of a family relationship (e.g. sister, father, etc.).
+let familyMember = prompt('Name a family relationship (e.g. sister, father, etc.)');
 
-// TODO: A variable named "bodyPart3" for the name of a body part.
+// A variable named "organ" for the name of a body organ (e.g. heart, liver, spleen, etc.).
+let organ = prompt('Name a body organ.');
 
-// TODO: A variable named "thing" for an object.
+// A variable named "bodyPart1" for the name of a body part.
+let bodyPart1 = prompt('Name a body part.');
 
-// TODO: A variable named "thing2" for an object you might give somebody you love.
+// A variable named "bodyPart2" for the name of a body part.
+let bodyPart2 = prompt('Name another body part.');
 
-// TODO: A variable named "thing3" for an object you might give somebody you like.
+// A variable named "bodyPart3" for the name of a body part.
+let bodyPart3 = prompt('Name yet another body part.');
 
-// TODO: A variable named "adjective4" for a word used to describe the vehicle.
+// A variable named "thing" for an object.
+let thing = prompt('Name an object.');
 
-// TODO: A variable named "adjective5" for a word used to describe the vehicle.
+// A variable named "thing2" for an object you might give somebody you love.
+let thing2 = prompt('Name a gift you would give to someone you loved.');
 
+// A variable named "thing3" for an object you might give somebody you like.
+let thing3 = prompt('Name a gift you would give to a friend.');
+
+// A variable named "adjective4" for a word used to describe the vehicle.
+let adjective4 = prompt('Name a word to describe something.');
+
+// A variable named "adjective5" for a word used to describe the vehicle.
+let adjective5 = prompt('Name another word to describe something.');
 
 ////////////////////////////////////////////////////////////////////////
 // Section Numbers
-//
-// The poem we are using has section numbers. Let's allow the user to
-// generate their own.
-//
-// TODO: To begin with, prompt the user to collect their favorite number that is not zero.
-// Call this variable "userNumber".
 
-// TODO: generate TWO more numbers called "number2" and "number 3".
-// Use any operator you would like to add, multiply, divide, or otherwise
-// change the number that the user submitted.
+let userNumber = prompt('Pick a number between 1 and 100.');
 
+let number2 = userNumber*2;
+
+let number3 = userNumber + number2; 
 
 // DO NOT EDIT BELOW THIS LINE /////////////////////////////////////////
 //
-// The code below his line handles variable replacement into the HTML file.
+// The code below this line handles variable replacement into the HTML file.
 // Please do not edit this code unless you are attempting a stretch goal.
 
 let titleText = `O ${honorific}! My ${honorific}! by <small>${authorName}</small>`;
